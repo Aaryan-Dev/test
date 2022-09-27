@@ -1,0 +1,15 @@
+Activation for changing nvm version--
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+________________________________________________________________________________
+
+
+for netlify build folder 
+
+create _redirect file
+then write - `/* /index.html  200` in _redirect file
+________________________________________________________________________________
+
+
+add "homepage":"." as last object key and value pair, in package.json.
