@@ -5,6 +5,9 @@ const Courses = () => {
     <div>
       Courses
       <div>WTf WTf WTf WTf WTf</div>
+      <div>WTf WTf WTf WTf WTf</div>
+      <div>WTf WTf WTf WTf WTf</div>
+      <div>WTf WTf WTf WTf WTf</div>
     </div>
   );
 };
