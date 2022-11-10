@@ -1,59 +1,59 @@
+import React from "react";
 import { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
 
 function Signup() {
-  const [email, setemail] = useState("");
-  const [password, setpassword] = useState("");
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
 
-  const signup = () => {
-    console.log(email, password);
-
-    const user_data = {
-      email: email,
-      password: password,
+  const handlesubmit = () => {
+    const payload = {
+      name,
+      email,
+      password,
     };
 
-    fetch("https://todo-api-1zbf.onrender.com/signup", {
+    fetch("https://bmi-lw21.onrender.com/signup", {
       method: "POST",
-      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(user_data),
+      body: JSON.stringify(payload),
     })
       .then((res) => {
         return res.json();
       })
       .then((res) => {
         console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
+        window.location = "https://profound-truffle-ebabc2.netlify.app/login";
       });
   };
 
   return (
     <div>
-      <h1>Welcome to Todo!</h1>
-      Signup
+      signup
       <br />
       <input
         type="text"
-        placeholder="email"
-        onChange={(e) => setemail(e.target.value)}
+        placeholder="name"
+        onChange={(e) => setName(e.target.value)}
       />
+      <br />
+      <input
+        type="email"
+        placeholder="email"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <br />
       <input
         type="password"
         placeholder="password"
-        onChange={(e) => setpassword(e.target.value)}
+        onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={signup}>Signup</button>
       <br />
-      <br />
-      <br />
-      <Link to="/login">login</Link>
+      <button onClick={handlesubmit}>Sign up</button>
     </div>
   );
 }
 
-export { Signup };
+export default Signup;
