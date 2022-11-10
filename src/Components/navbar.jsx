@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Signup from "./signup";
+import Signup from "./Signup";
 
 const Navbar = () => {
   return (
