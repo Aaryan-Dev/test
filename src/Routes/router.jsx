@@ -4,17 +4,16 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Signup } from "./Components/Signup";
 import { Login } from "./Components/Login";
 
-function App() {
+function Router() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Routes>
-          <Route path="/" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </header>
+      <h1>Welcome to Todo!</h1>
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
   );
 }
 
-export default App;
+export default Router;
