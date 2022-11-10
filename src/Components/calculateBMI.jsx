@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 
-function CalculateBMI() {
+function Calculatenmi() {
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
   const [bmi, setBmi] = useState([{}]);
@@ -74,4 +74,4 @@ function CalculateBMI() {
   );
 }
 
-export default CalculateBMI;
+export default Calculatebmi;

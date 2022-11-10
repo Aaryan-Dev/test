@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Signup from "./Components/Signup";
 import Login from "./Components/Login";
-import CalculateBMI from "./Components/Calculatebmi";
+import Calculatebmi from "./Components/Calculatebmi";
 import Logout from "./Components/Logout";
 import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<CalculateBMI />} />
+          <Route path="/" element={<Calculatebmi />} />
         </Routes>
       </header>
     </div>
