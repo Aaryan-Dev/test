@@ -14,4 +14,4 @@ function Logout() {
   );
 }
 
-export { Logout };
+export default Logout;

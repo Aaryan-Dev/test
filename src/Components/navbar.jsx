@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Signup from "./signup";
 
 const Navbar = () => {
   return (
@@ -11,4 +12,4 @@ const Navbar = () => {
   );
 };
 
-export { Navbar };
+export default Navbar;
