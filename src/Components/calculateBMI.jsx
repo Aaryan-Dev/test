@@ -74,4 +74,4 @@ function CalculateBMI() {
   );
 }
 
-export default CalculateBMI;
+export { CalculateBMI };
