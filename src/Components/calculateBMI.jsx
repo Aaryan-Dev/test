@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import Logout from "./Logout";
 
 function CalculateBMI() {
   const [height, setHeight] = useState(0);
