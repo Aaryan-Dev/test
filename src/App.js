@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Signup } from "./Components/signup";
 import { Login } from "./Components/login";
+import { Signup } from "./Components/signup";
 import { CalculateBMI } from "./Components/calculateBMI";
 import { Logout } from "./Components/logout";
 import { useEffect, useState } from "react";
