@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Signup from "./Components/signup";
+import Signup from "./Components/Signup";
 import Login from "./Components/login";
 import CalculateBMI from "./Components/calculateBMI";
 import Logout from "./Components/logout";
