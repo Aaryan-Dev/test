@@ -1,11 +1,11 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Signup from "./Components/Signup";
-import Login from "./Components/login";
-import CalculateBMI from "./Components/calculateBMI";
-import Logout from "./Components/logout";
+import Login from "./Components/Login";
+import CalculateBMI from "./Components/CalculateBMI";
+import Logout from "./Components/Logout";
 import { useEffect, useState } from "react";
-import Navbar from "./Components/navbar";
+import Navbar from "./Components/Navbar";
 
 function App() {
   const [auth, setAuth] = useState(false);
